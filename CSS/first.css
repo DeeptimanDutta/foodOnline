@@ -1,0 +1,49 @@
+body {
+    font-family: 'Bree Serif', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../connect.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; /* Default text color for the entire page */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.contact-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    color:white; /* Text color for the contact information box */
+    height: 55%;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    font-weight: bold;
+}
