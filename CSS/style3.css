@@ -1,0 +1,40 @@
+body{
+    background: url(../menubackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; 
+    size: 10px;
+}
+.imageorder{
+    text-align: center; /* Center-align the content within the container */
+}
+
+.imageorder img {
+    max-width: 50%; /* Ensure the image doesn't exceed the container's width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.menu-details {
+    padding: 20px; 
+    text-align: center;
+}
+
+
+.menu {
+    margin: 10px; 
+    padding: 10px;  
+    border-radius: 45px;
+}
+
+.menu h2 {
+    font-size: 41px;
+    color:white; 
+    text-align: center;
+}
+
+.menu p {
+    font-size: 25px;
+    color: white; 
+    text-align: center;
+}
