@@ -3,65 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order Now</title>
     <link rel="stylesheet" href="CSS/style3.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="imageorder">
-        <img src="ordernow.png" alt="Order Now"height="50">
-    </div>
-    <section class="menu-details">
-        <div id="menuu">
-            <div class="menu">
-                <h2 class="h-secondary center">Rice</h2>
-                <p class="center">Chicken Biriyani</p>
-                <p class="center">Mutton Biriyani</p>
-                <p class="center">Egg Biriyani</p>
-                <p class="center">Mixed Fried Rice</p>
-                <p class="center">Egg Fried Rice</p>
-                <p class="center">Veg Fried Rice</p>
-                <p class="center">Plain Rice</p>
-                <p class="center">Jeera Rice</p>
+    <header>
+        <h1>FoodOnline - Order Now</h1>
+    </header>
+    <section class="menu-container">
+        <h2>Menu</h2>
+        <div class="menu">
+            <div class="menu-item" data-item="Chicken Biryani">
+                <img src="images/biryani-7009110_1920.jpg" alt="Chicken Biriyani">
+                <span>Chicken Biryani</span>
+                <span class="price">₹150/- only</span>
+                <button onclick="addToOrder('Chicken Biryani')">Add to Order</button>
             </div>
-            <div class="menu">
-                <h2 class="h-secondary center">Italian</h2>
-                <p class="center">White Souce Pasta</p>
-                <p class="center">Red Souce Pasta</p>
-                <p class="center">Mixed Souce Pasta</p>
-                <p class="center">Veg Margherita Pizza</p>
-                <p class="center">Chicken Margherita Pizza</p>
+            <div class="menu-item" data-item="Veg Pizza">
+                <img src="images/pizza-1081534_1920.jpg" alt="Veg Pizza">
+                <span>Veg Pizza</span>
+                <span class="price">₹115/- only</span>
+                <button onclick="addToOrder('Veg Pizza')">Add to Order</button>
             </div>
-            <div class="menu">
-                <h2 class="h-secondary center">Roti</h2>
-                <p class="center">Butter Nun</p>
-                <p class="center">Garlic Butter Nun</p>
-                <p class="center">Plain Nun</p>
-                <p class="center">Rumali Roti</p>
-                <p class="center">Plain Roti</p>
+            <div class="menu-item" data-item="Mutton Biryani">
+                <img src="images/biryani-platter-7253751_1920.jpg" alt="Mutton Biriyani">
+                <span>Mutton Biryani</span>
+                <span class="price">₹250/- only</span>
+                <button onclick="addToOrder('Mutton Biryani')">Add to Order</button>
             </div>
-            <div class="menu">
-                <h2 class="h-secondary center">Mexican</h2>
-                <p class="center">Nachos</p>
-                <p class="center">Veg Tacos</p>
-                <p class="center">Salsa</p>
-                <p class="center">Burritos</p>
+            <div class="menu-item" data-item="Chicken Pizza">
+                <img src="images/pizza-386717_1920.jpg" alt="Chicken Pizza">
+                <span>Chicken Pizza</span>
+                <span class="price">₹150/- only</span>
+                <button onclick="addToOrder('Chicken Pizza')">Add to Order</button>
             </div>
-            <div class="menu">
-                <h2 class="h-secondary center">Deserts</h2>
-                <p class="center">Gulab Jamun</p>
-                <p class="center">Vanilla IceCream</p>
-                <p class="center">Strawberry IceCream</p>
-                <p class="center">Rash Malai</p>
-                <p class="center">Chocolate IceCream</p>
+            <div class="menu-item" data-item="Mixed Fried Rice">
+                <img src="images/fried-rice-4708866_1920.jpg" alt="Mixed Fried Rice">
+                <span>Mixed Fried Rice</span>
+                <span class="price">₹130/- only</span>
+                <button onclick="addToOrder('Mixed Fried Rice')">Add to Order</button>
             </div>
-            <div class="menu">
-                <h2 class="h-secondary center">Chef Specials</h2>
-                <p class="center">Special Mutton Biriyani</p>
-                <p class="center">Special Chicken Biriyani</p>
-                <p class="center">Mixed Margherita Pizza</p>
+            <div class="menu-item" data-item="Veg Fried Rice">
+                <img src="images/fried-rice-2098037_1920.jpg" alt="Veg Fried Rice">
+                <span>Veg Fried Rice</span>
+                <span class="price">₹100/- only</span>
+                <button onclick="addToOrder('Veg Fried Rice')">Add to Order</button>
             </div>
+            <div class="menu-item" data-item="Chicken Hakka Noodles">
+                <img src="images/hakka-noodles-4347560_1920.jpg" alt="Chicken Hakka Noodles">
+                <span>Chicken Hakka Noodles</span>
+                <span class="price">₹120/- only</span>
+                <button onclick="addToOrder('Chicken Hakka Noodles')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Veg Hakka Noodles">
+                <img src="images/korean-food-709606_1920.jpg" alt="Veg Hakka Noodles">
+                <span>Veg Hakka Noodles</span>
+                <span class="price">₹100/- only</span>
+                <button onclick="addToOrder('Veg Hakka Noodles')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Veg Pulao">
+                <img src="images/kismis-rice-7137523_1920.jpg" alt="Veg Pulao">
+                <span>Veg Pulao</span>
+                <span class="price">₹150/- only</span>
+                <button onclick="addToOrder('Veg Pulao')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Chicken Chilli">
+                <img src="images/chili-chicken-5471404_1920.jpg" alt="Chicken Chilli">
+                <span>Chicken Chilli</span>
+                <span class="price">₹170/- only</span>
+                <button onclick="addToOrder('Chicken Chilli')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Paneer Chilli">
+                <img src="images/paneer chili.jpg" alt="Paneer Chilli">
+                <span>Paneer Chilli</span>
+                <span class="price">₹170/- only</span>
+                <button onclick="addToOrder('Paneer Chilli')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Chicken Butter Masala">
+                <img src="images/raman-sqcH2q7lkvo-unsplash.jpg" alt="Chicken Butter Masala">
+                <span>Chicken Butter Masala</span>
+                <span class="price">₹200/- only</span>
+                <button onclick="addToOrder('Chicken Butter Masala')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Paneer Butter Masala">
+                <img src="images/paneer butter masala.jpg" alt="Paneer Butter Masala">
+                <span>Paneer Butter Masala</span>
+                <span class="price">₹190/- only</span>
+                <button onclick="addToOrder('Paneer Butter Masala')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Garlic Nun">
+                <img src="images/pexels-alberta-studios-10337726.jpg" alt="Garlic Nun">
+                <span>Garlic Nun</span>
+                <span class="price">₹15/- only</span>
+                <button onclick="addToOrder('Garlic Nun')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Plain Nun">
+                <img src="images/bread-5471408_1920.jpg" alt="Plain Nun">
+                <span>Plain Nun</span>
+                <span class="price">₹10/- only</span>
+                <button onclick="addToOrder('Plain Nun')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Roomali Roti">
+                <img src="images/Roomali-Roti.JPG" alt="Roomali Roti">
+                <span>Roomali Roti</span>
+                <span class="price">₹15/- only</span>
+                <button onclick="addToOrder('Roomali Roti')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Plain Roti">
+                <img src="images/plain roti.jpg" alt="Plain Roti">
+                <span>Plain Roti</span>
+                <span class="price">₹10/- only</span>
+                <button onclick="addToOrder('Plain Roti')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Plain Rice">
+                <img src="images/rice-49690_1920.jpg" alt="Plain Rice">
+                <span>Plain Rice</span>
+                <span class="price">₹30/- only</span>
+                <button onclick="addToOrder('Plain Rice')">Add to Order</button>
+            </div>
+
+            <div class="menu-item" data-item="Dal Makhni">
+                <img src="images/dal makhni.jpg" alt="Dal Makhni">
+                <span>Dal Makhni</span>
+                <span class="price">₹115/- only</span>
+                <button onclick="addToOrder('Dal Makhni')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Paneer Tikka">
+                <img src="images/viktor-forgacs-WmKXu-bzygo-unsplash.jpg" alt="Paneer Tikka">
+                <span>Paneer Tikka</span>
+                <span class="price">₹175/- only</span>
+                <button onclick="addToOrder('Paneer Tikka')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Chicken Tandoori">
+                <img src="images/chicken_tandoori.jpg" alt="Chicken Tandoori">
+                <span>Chicken Tandoori</span>
+                <span class="price">₹350/- only</span>
+                <button onclick="addToOrder('Chicken Tandoori')">Add to Order</button>
+            </div>
+            <div class="menu-item" data-item="Chicken Tikka Masala">
+                <img src="images/amirali-mirhashemian-ZSukCSw5VV4-unsplash.jpg" alt="Chicken Tikka Masala">
+                <span>Chicken Tikka Masala</span>
+                <span class="price">₹250/- only</span>
+                <button onclick="addToOrder('Chicken Tikka Masala')">Add to Order</button>
+            </div>
+
+            
+            <!-- Add more menu items as needed -->
         </div>
     </section>
+    <section class="order-container">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <p>Total: <span id="total">0</span></p>
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+
+    <script src="Java Script/ordernow.js"></script>
 </body>
 </html>
